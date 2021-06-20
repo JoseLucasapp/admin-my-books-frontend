@@ -1,0 +1,14 @@
+.div-main{
+    background-color: darkslategrey;
+    width: 80%;
+    margin-left: 10%;
+    height: 5rem;
+    border: 5px solid goldenrod;
+    border-radius: 15px;
+    margin-top: 1rem;
+}
+
+.div-main h1{
+    font-size: 4rem;
+    color: gray;
+}

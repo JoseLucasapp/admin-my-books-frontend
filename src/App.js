@@ -1,11 +1,13 @@
 import './App.css';
 
-import Route from './main/routes.main';
+import {BodyPage} from './template/body.template';
+import {Top} from './template/top.template';
 
 function App() {
   return (
     <div className="App">
-      <Route />
+      <Top />
+      <BodyPage />
     </div>
   );
 }

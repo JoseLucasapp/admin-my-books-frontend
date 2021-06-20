@@ -1,0 +1,10 @@
+.body-main{
+    width: 70%;
+    margin-left: 15%;
+    background-color: dodgerblue;
+    margin-top: 1rem;
+    border: 3px solid goldenrod;
+    border-radius: 5px;
+    overflow-y: scroll;
+    height: 30rem;
+}
