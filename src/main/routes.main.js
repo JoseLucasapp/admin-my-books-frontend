@@ -7,6 +7,7 @@ import {
 
 import {Home} from '../components/home.components';
 import {Add} from '../components/add.components';
+import { Book } from "../components/book.components";
 
 export default function App() {
   return (
@@ -14,6 +15,9 @@ export default function App() {
         <Switch>
           <Route path="/add">
             <Add />
+          </Route>
+          <Route path="/book">
+            <Book />
           </Route>
           <Route path="*">
             <Home />

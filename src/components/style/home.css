@@ -1,0 +1,11 @@
+.main-books{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 1rem;
+    height: 45rem;
+    overflow-y: scroll;
+}
+
+.main-books::-webkit-scrollbar {
+    display: none;
+}

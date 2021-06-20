@@ -1,0 +1,31 @@
+.main-search{
+    width: 80%;
+    margin-left: 10%;
+    height: 2rem;
+    margin-top: 1rem;
+}
+
+.main-search input{
+    width: 70%;
+    height: 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    border: transparent;
+    text-align: center;
+}
+
+.main-search button{
+    width: 10%;
+    margin-left: 5%;
+    border: transparent;
+    height: 1.5rem;
+    border-radius: 10px;
+    transform: scale(0.8);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.main-search button:hover{
+    transform: scale(1);
+}
