@@ -50,3 +50,7 @@
     color: purple;
     cursor: pointer;
 }
+
+h2 {
+	text-transform: capitalize;
+}

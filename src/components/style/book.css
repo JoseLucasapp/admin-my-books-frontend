@@ -7,7 +7,11 @@
     margin-top: 2rem;
 }
 
-.book-main .book-back{
+.book-main .book-topitens{
+    display: flex;
+    justify-content: space-between;
+}
+.book-main .book-topitens .book-back{
     background-color: #8cbc2b;
     width: 15%;
     height: 3rem;
@@ -16,17 +20,35 @@
     transform: scale(0.9);
 }
 
-.book-main .book-back:hover{
+.book-main .book-topitens .book-remove{
+    background-color: red;
+    width: 15%;
+    height: 3rem;
+    font-size: 22px;
+    cursor: pointer;
+    transform: scale(0.9);
+    color: #f1f7f7;
+}
+
+.book-main .book-topitens .book-back:hover{
     transform: scale(1);
 }
 
-.book-main .book-back h2{
+.book-main .book-topitens .book-remove:hover{
+    transform: scale(1);
+}
+
+.book-main .book-topitens .book-back h2{
     color: #f1f7f7;
 }
 
 .book-main .book-details .book-data{
     display: flex;
     flex-direction: row;
+}
+
+.book-main{
+    text-transform: capitalize;
 }
 
 .book-main .book-details .book-data .book-main-image{
@@ -72,4 +94,14 @@
 
 .book-main .book-details-second div p{
     margin-top: 0.7rem;
+}
+
+.book-main .book-details .book-details-second .hasbeenread-yes{
+    background-color: #8cbc2b;
+    cursor: pointer;
+}
+
+.book-main .book-details .book-details-second .hasbeenread-no{
+    background-color: red;
+    cursor: pointer;
 }

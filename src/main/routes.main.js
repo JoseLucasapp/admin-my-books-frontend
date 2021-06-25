@@ -33,18 +33,57 @@ export default function App() {
       return window.location.href="/";
     }
   }
-  //await axios.get(`${baseURL}/book/${id}`).then(res => setOneBook(res.data.data)).catch((err)=> window.location.href = '/');
+
+  const addNewBook = async(data)=>{
+    try{
+      await axios.post(`${baseURL}/book`,{
+        "name": data.name.value,
+        "genre": data.genre.value,
+        "author": data.author.value,
+        "year": data.year.value,
+        "publisher": data.publisher.value,
+        "cover": data.cover.value,
+        "pages": data.pages.value,
+        "language": data.language.value,
+        "price": data.price.value,
+      });
+      return window.location.href="/";
+    }catch(err){
+      return window.location.href="/";
+    }
+  }
+
+  const editBook = async(id, data)=>{
+    try{
+      await axios.put(`${baseURL}/book/${id}`,data);
+      return window.location.reload();
+    }catch(err){
+      return window.location.href="/";
+    }
+  }
+
+  const removeBook = async(id)=>{
+    try{
+      await axios.delete(`${baseURL}/book/${id}`);
+      return window.location.href="/";
+    }catch(err){
+      return window.location.href="/";
+    }
+  }
 
   return (
     <Router>
         <Switch>
           <Route path="/add">
-            <Add />
+            <Add 
+            addNewBook={addNewBook}/>
           </Route>
           <Route path="/book">
             <Book 
             getOneBook={getOneBook}
-            book={oneBook}/>
+            book={oneBook}
+            editBook={editBook}
+            removeBook={removeBook}/>
           </Route>
           <Route path="*">
             <Home 

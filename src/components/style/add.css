@@ -1,0 +1,55 @@
+.add-main{
+    display: block;
+}
+
+.add-main form{
+    display: flex;
+    flex-direction: column;
+}
+
+.add-main form input{
+    width: 50%;
+    height: 2rem;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+    border-color: transparent;
+    margin-left: 25%;
+}
+
+.add-main form button{
+    width: 25%;
+    height: 2rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    border-color: transparent;
+    margin-left: 37.5%;
+    cursor: pointer;
+    background-color: #8cbc2b;
+    color: #f1f7f1;
+}
+
+.add-main h1{
+    color: #8cbc2b;
+    margin-top: 1rem;
+}
+
+.add-main .add-back{
+    background-color: #8cbc2b;
+    width: 15%;
+    height: 3rem;
+    font-size: 25px;
+    cursor: pointer;
+    transform: scale(0.9);
+    margin-left: 5%;
+    margin-top: 2rem;
+}
+
+.add-main .add-back h2{
+    color: #f1f7f1;
+}
+
+.add-main .add-back:hover{
+    transform: scale(1);
+}

@@ -10,18 +10,31 @@ export const Book = (props)=>{
     const id = location.searchParams.get("id");
     const {
         getOneBook,
-        book
+        book,
+        editBook,
+        removeBook
     } = props;
 
     useEffect(()=>{
         getOneBook(id);
     },[]);
 
+    const hasBeenReadUpdate = ()=>{
+        editBook(id, {
+            "hasBeenRead": !book.hasBeenRead
+        });
+    }
+
     return(
         <Fragment>
             <div className="book-main">
-                <div className="book-back">
-                    <a style={{textDecoration:'none'}} href="/home"><div><h2>🠔</h2></div></a>
+                <div className="book-topitens">
+                    <div className="book-back">
+                        <a style={{textDecoration:'none'}} href="/home"><div><h2>🠔</h2></div></a>
+                    </div>
+                    <div className="book-remove">
+                        <div onClick={()=>removeBook(id)}><h2>X</h2></div>
+                    </div>
                 </div>
                 <div className="book-details">
                     <div className="book-name">
@@ -56,7 +69,7 @@ export const Book = (props)=>{
                             <p><b>Publisher date</b></p>
                             <p>{book.year}</p>
                         </div>
-                        <div>
+                        <div onClick={()=>hasBeenReadUpdate()} className={book.hasBeenRead ? "hasbeenread-yes" : "hasbeenread-no"}>
                             <p><b>Has been read</b></p>
                             <p>{book.hasBeenRead ? 'Yes': 'No'}</p>
                         </div>
