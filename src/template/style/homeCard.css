@@ -1,0 +1,52 @@
+.homecard-main{
+    width: 80%;
+    margin-left: 10%;
+    background-color: #8cbc2b;
+    color: #f1f7f7;
+    margin-top: 0.5rem;
+    height: 12rem;
+    transform: scale(0.9);
+    border-top-right-radius: 50px;
+}
+
+.homecard-main .homecard-second .bookimage{
+    width: 18%;
+    height: 8.8rem;
+    margin-left: 5%;
+    margin-top: 1.4rem;
+    display: block;
+}
+
+.homecard-main .homecard-second .bookimage a img{
+    width: 100%;
+    height: 100%;
+    border: 0.2rem solid transparent;
+}
+
+.homecard-main .homecard-second .bookimage:hover img{
+    border-color: purple;
+    cursor: pointer;
+}
+
+.homecard-main .homecard-second{
+    display: flex;
+    flex-direction: row;
+}
+
+.homecard-main .bookdetails{
+    margin-top: 1.4rem;
+    width: 60%;
+    margin-left: 5%;
+    height: 9rem;
+    text-align: left;
+}
+
+.homecard-main .bookdetails h2{
+    color: #e0e9c4;
+    cursor: pointer;
+}
+
+.homecard-main .bookdetails h2:hover{
+    color: purple;
+    cursor: pointer;
+}

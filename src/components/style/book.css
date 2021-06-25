@@ -1,0 +1,75 @@
+.book-main{
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    color: #8cbc2b;
+    margin-top: 2rem;
+}
+
+.book-main .book-back{
+    background-color: #8cbc2b;
+    width: 15%;
+    height: 3rem;
+    font-size: 25px;
+    cursor: pointer;
+    transform: scale(0.9);
+}
+
+.book-main .book-back:hover{
+    transform: scale(1);
+}
+
+.book-main .book-back h2{
+    color: #f1f7f7;
+}
+
+.book-main .book-details .book-data{
+    display: flex;
+    flex-direction: row;
+}
+
+.book-main .book-details .book-data .book-main-image{
+    display: flex;
+    width: 35%;
+    height: 25rem;
+}
+
+.book-main .book-details .book-data .book-main-image img{
+    margin-top: 1.5rem;
+    width: 80%;
+    height: 22rem;
+    margin-left: 10%;
+    border-radius: 10px;
+}
+
+.book-main .book-details .book-data .book-main-details{
+    width: 64%;
+    margin-left: 1%;
+    text-align: left;
+}
+
+.book-main .book-details .book-data .book-main-details h3{
+    margin-top: 1rem;
+    margin-left: 5%;
+}
+
+.book-main .book-details .book-details-second{
+    display: flex;
+    margin-top: 1rem;
+}
+
+.book-main .book-details .book-details-second div{
+    margin-left: 4%;
+    background-color: #8cbc2b;
+    color: #f1f7f7;
+    height: 5rem;
+    width: 15%;
+    border-color: transparent;
+    border-radius: 15px;
+    border-bottom-left-radius: 0px;
+}
+
+.book-main .book-details-second div p{
+    margin-top: 0.7rem;
+}

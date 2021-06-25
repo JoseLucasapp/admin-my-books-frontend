@@ -1,9 +1,9 @@
 .body-main{
     width: 70%;
     margin-left: 15%;
-    background-color: dodgerblue;
+    background-color: #e0e9ca;
     margin-top: 1rem;
-    border: 3px solid goldenrod;
+    border: 3px solid #bcd829;
     border-radius: 5px;
     height: 50rem;
 }

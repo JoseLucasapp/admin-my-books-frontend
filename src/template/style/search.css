@@ -24,6 +24,8 @@
     transform: scale(0.8);
     cursor: pointer;
     font-weight: bold;
+    background-color: #8cbc2b;
+    color: #f1f7f1;
 }
 
 .main-search button:hover{

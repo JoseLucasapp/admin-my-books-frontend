@@ -1,14 +1,14 @@
 .div-main{
-    background-color: darkslategrey;
+    background-color: #8cbc2b;
     width: 80%;
     margin-left: 10%;
     height: 5rem;
-    border: 5px solid goldenrod;
+    border: 5px solid #bcd829;
     border-radius: 15px;
     margin-top: 1rem;
 }
 
 .div-main h1{
     font-size: 4rem;
-    color: gray;
+    color: #f1f7f7;
 }

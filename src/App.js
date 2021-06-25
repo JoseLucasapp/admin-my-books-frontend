@@ -4,6 +4,7 @@ import {BodyPage} from './template/body.template';
 import {Top} from './template/top.template';
 
 function App() {
+
   return (
     <div className="App">
       <Top />

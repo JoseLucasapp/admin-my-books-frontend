@@ -1,16 +1,23 @@
 import React from 'react';
 
 import {Search} from '../template/search.template';
+import {renderList} from './actions/render.actions';
 
 import './style/home.css';
 
-export const Home = (props)=>(
+export const Home = (props)=>{
+    const {
+        getAllBooks,
+        searchBooks
+    } = props;
+    return(
     <div>
         <div>
-            <Search />
+            <Search searchBooks={searchBooks} />
         </div>
-        <div className="main-books">
-            Book
+        <div>
+            {renderList(getAllBooks)}
         </div>
     </div>
 )
+}
