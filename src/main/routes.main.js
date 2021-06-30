@@ -11,13 +11,14 @@ import axios from "axios";
 import {Home} from '../components/home.components';
 import {Add} from '../components/add.components';
 import { Book } from "../components/book.components";
+import { Edit } from "../components/edit.components";
 
 const baseURL = process.env.REACT_APP_BASE_URL;
 
 export default function App() {
   
-  const [books, setBooks] = useState([]);
-  const [oneBook, setOneBook] = useState([]);
+  const [books, setBooks] = useState([""]);
+  const [oneBook, setOneBook] = useState([""]);
   
   useEffect(()=>{
     getAllBooks()
@@ -84,6 +85,13 @@ export default function App() {
             book={oneBook}
             editBook={editBook}
             removeBook={removeBook}/>
+          </Route>
+          <Route path="/edit">
+            <Edit 
+            getOneBook={getOneBook}
+            bookData={oneBook}
+            setBook = {setOneBook}
+            editBook={editBook}/>
           </Route>
           <Route path="*">
             <Home 

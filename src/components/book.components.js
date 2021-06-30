@@ -1,7 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React, { Fragment, useEffect } from 'react';
 import { toBrl } from './actions/toBrl.actions';
-import { Link } from 'react-router-dom';
 
 import './style/book.css'
 
@@ -49,6 +48,7 @@ export const Book = (props)=>{
                                 <h3>by {book.author}</h3>
                                 <h3>Price {toBrl(book.price)}</h3>
                                 <h3>{book.genre}</h3>
+                                <a href={`/edit?id=${id}`}><h3>Edit details</h3></a>
                             </div>
                         </div>
                     </div>
